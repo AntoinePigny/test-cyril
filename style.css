@@ -4,19 +4,20 @@
 
 @font-face {
    font-family: 'Inter';
-   src: url(.\assets\fonts\Inter-VariableFont_slntwght.ttf);
+   src: url('./assets/fonts/Inter-VariableFont_slntwght.ttf');
+   /* Attention Font Variable, a utiliser avec des regles correspondantes */
 }
 
 :root {
    /* Colors */
-   --sOrange: hsl(35, 77%, 62%);
-   --sRed: hsl(5, 85%, 63%);
-   --oWhite: hsl(36, 100%, 99%);
-   --gBlue: hsl(233, 8%, 79%);
-   --dgBlue: hsl(236, 13%, 42%);
-   --vdBlue: hsl(240, 100%, 5%);
+   --orange-400: hsl(35, 77%, 62%);
+   --orange-700: hsl(5, 85%, 63%);
+   --white-400: hsl(36, 100%, 99%);
+   --grayblue-400: hsl(233, 8%, 79%);
+   --grayblue-700: hsl(236, 13%, 42%);
+   --blue-900: hsl(240, 100%, 5%);
    /* Font Sizes */
-   --fsp: 15px;
+   --font-size-paragraph: 15px;
    /* Font Weights */
    --regFW: 400;
    --boldFW: 700;
@@ -31,4 +32,15 @@ body {
 .flex-nav {
    display: flex;
    justify-content: space-between;
+}
+
+ul,
+ol {
+   counter-reset: articleCount;
+   list-style-type: none;
+}
+
+ol li::before {
+   counter-increment: articleCount;
+   content: '0' counter(articleCount);
 }
