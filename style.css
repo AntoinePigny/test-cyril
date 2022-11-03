@@ -1,0 +1,24 @@
+* {
+   box-sizing: border-box;
+}
+
+@font-face {
+   font-family: 'Inter';
+   src: url(.\assets\fonts\Inter-VariableFont_slntwght.ttf);
+}
+
+:root {
+   /* Colors */
+   --sOrange: hsl(35, 77%, 62%);
+   --sRed: hsl(5, 85%, 63%);
+   --oWhite: hsl(36, 100%, 99%);
+   --gBlue: hsl(233, 8%, 79%);
+   --dgBlue: hsl(236, 13%, 42%);
+   --vdBlue: hsl(240, 100%, 5%);
+   /* Font Sizes */
+   --fsp: 15px;
+   /* Font Weights */
+   --regFW: 400;
+   --boldFW: 700;
+   --extraboldFW: 800;
+}
