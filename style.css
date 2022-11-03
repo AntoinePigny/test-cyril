@@ -22,3 +22,13 @@
    --boldFW: 700;
    --extraboldFW: 800;
 }
+
+body {
+   max-width: 100rem;
+   margin: 0 auto;
+}
+
+.flex-nav {
+   display: flex;
+   justify-content: space-between;
+}
