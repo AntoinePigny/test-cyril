@@ -11,3 +11,9 @@ List of things to practice :
 -  Grid / Flexbox
 -  3 Layouts (mobile / tablet / desktop)
 -  using image sources for responsive
+
+Things to fix :
+
+-  Flexbox for the main article
+-  max width for the main image past 1000 px
+-  length of the new section on tablet display

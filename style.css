@@ -99,6 +99,8 @@ h4 {
    padding-block: 1rem;
 }
 
+/* Grid areas below don't work with nth-child. I don't know why */
+
 .headline-container {
    grid-area: h;
 }
