@@ -6,12 +6,17 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>W News</title>
       <link rel="stylesheet" href="./style.css" />
+      <link rel="icon" href="./assets/images/favicon-32x32.png" />
    </head>
    <body>
-      <header class="flex-nav">
-         <a href="./index.html">W</a>
+      <header class="header-container">
+         <a href="./index.html">
+            <picture>
+               <img src="./assets/images/logo.svg" alt="Accueil" />
+            </picture>
+         </a>
          <nav>
-            <ul>
+            <ul class="nav-container">
                <li><a href="">Home</a></li>
                <li><a href="">New</a></li>
                <li><a href="">Popular</a></li>
@@ -20,17 +25,24 @@
             </ul>
          </nav>
       </header>
-      <main>
-         <section>
-            <img src="" alt="" />
-            <h2>The Bright Future of Web 3.0?</h2>
-            <p>
-               We dive into the next evolution of the web that claims to put the power of the platforms back into the
-               hands of the people. But is it really fulfilling its promise?
-            </p>
-            <button>Read more</button>
+      <main class="main-container">
+         <section class="headline-container">
+            <picture>
+               <source srcset="./assets/images/image-web-3-desktop.jpg" media="(min-width: 800px)" />
+               <img src="./assets/images/image-web-3-mobile.jpg" alt="Web3.0" />
+            </picture>
+            <div class="headline-content-flex">
+               <h2>The Bright Future of Web 3.0?</h2>
+               <div class="">
+                  <p>
+                     We dive into the next evolution of the web that claims to put the power of the platforms back into
+                     the hands of the people. But is it really fulfilling its promise?
+                  </p>
+                  <a href="">READ MORE</a>
+               </div>
+            </div>
          </section>
-         <section>
+         <section class="new-container">
             <h2>New</h2>
             <ul>
                <li>
@@ -41,6 +53,7 @@
                      </a>
                   </article>
                </li>
+               <hr />
                <li>
                   <article>
                      <a href="">
@@ -49,6 +62,7 @@
                      </a>
                   </article>
                </li>
+               <hr />
                <li>
                   <article>
                      <a href="">
@@ -59,30 +73,33 @@
                </li>
             </ul>
          </section>
-         <aside>
-            <ol>
+         <aside class="trending-container">
+            <ol class="trending-articles-container">
                <li>
                   <a href="">
-                     <img src="" alt="" />
-                     <p>02</p>
-                     <h4>Top 10 Laptops of 2022</h4>
-                     <p>Our best picks for various needs and budgets.</p>
+                     <img src="./assets/images/image-top-laptops.jpg" alt="Best Laptops of 2022" />
+                     <div class="trending-article-summary">
+                        <h4>Top 10 Laptops of 2022</h4>
+                        <p>Our best picks for various needs and budgets.</p>
+                     </div>
                   </a>
                </li>
                <li>
                   <a href="">
-                     <img src="" alt="" />
-                     <p>01</p>
-                     <h4>Reviving Retro PCs</h4>
-                     <p>What happens when old PCs are given modern upgrades?</p>
+                     <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PC" />
+                     <div class="trending-article-summary">
+                        <h4>Reviving Retro PCs</h4>
+                        <p>What happens when old PCs are given modern upgrades?</p>
+                     </div>
                   </a>
                </li>
                <li>
                   <a href="">
-                     <img src="" alt="" />
-                     <p>03</p>
-                     <h4>The Growth of Gaming</h4>
-                     <p>How the pandemic has sparked fresh opportunities.</p>
+                     <img src="./assets/images/image-gaming-growth.jpg" alt="Growth of Gaming" />
+                     <div class="trending-article-summary">
+                        <h4>The Growth of Gaming</h4>
+                        <p>How the pandemic has sparked fresh opportunities.</p>
+                     </div>
                   </a>
                </li>
             </ol>
